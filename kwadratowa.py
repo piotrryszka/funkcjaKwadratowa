@@ -1,5 +1,6 @@
 import math
 
+
 class FunkcjaKwadratowa:
     def __init__(self, a, b, c):
         self.a = a
@@ -19,10 +20,10 @@ class FunkcjaKwadratowa:
             else:
                 return 'Nie ma rozwiązań, stała y nie przecina się z osią x.'
         if self.a == 0:
-            return 'współczynnik a równy 0 więc jest jedno roziązanie', -self.c/self.b
-        delta = self.b**2 - 4*self.a*self.c
+            return 'współczynnik a równy 0 więc jest jedno roziązanie', -self.c / self.b
+        delta = self.b ** 2 - 4 * self.a * self.c
         if delta < 0:
             return 'Nie ma miejsc zerowych ponieważ delta mniejsza od 0.'
         elif delta == 0:
-            return -self.b/(2*self.a), "Delta równia 0 wiec jedno rozwiązanie"
-        return (-self.b-math.sqrt(delta))/(2*self.a), (-self.b+math.sqrt(delta))/(2*self.a)
+            return -self.b / (2 * self.a), "Delta równia 0 wiec jedno rozwiązanie"
+        return (-self.b - math.sqrt(delta)) / (2 * self.a), (-self.b + math.sqrt(delta)) / (2 * self.a)

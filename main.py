@@ -1,4 +1,6 @@
 from kwadratowa import FunkcjaKwadratowa
+
+
 def main():
     f1 = FunkcjaKwadratowa(3, 4, -7)
     f1.wypisz()
@@ -11,6 +13,7 @@ def main():
     print(FunkcjaKwadratowa(1, 2, 3).rozwiaz())
     print(FunkcjaKwadratowa(1, -5, 6).rozwiaz())
     print(FunkcjaKwadratowa(1, 4, 4).rozwiaz())
+
 
 if __name__ == "__main__":
     main()
